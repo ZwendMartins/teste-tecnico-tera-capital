@@ -59,22 +59,41 @@ Caso não tenha, você pode baixar em: [python.org](https://www.python.org/downl
 
 - Salve em uma pasta de fácil acesso (ex.: Downloads).
 
-**3. Instalar dependências**
-   
-- Esse programa usa a biblioteca pandas;
+**3. Usando um ambiente virtual Python**
 
-- Após se certificar de que tem o python instalado, no terminal, rode:
+Para garantir a compatibilidade do programa em diferentes ambientes (Mac OS / Windows / Linux), recomenda-se o uso de um ambiente virtual exclusivo para este projeto. Caso já possua o ambiente Python adequado, não é necessário a criação deste ambiente.
+
+Acesse a pasta do projeto (ex.: Downloads) e execute os seguintes comandos:
 
 ```bash
-pip install pandas
+python -m venv venv
 ```
+e
+
+```bash
+source venv/bin/activate  # Para macOS/Linux
+
+#ou
+
+venv\Scripts\activate     # Para Windows
+```
+
+Este projeto utiliza as seguintes dependências:
+
+- Pandas;
+- openpyxl (usado para exportar arquivos excel);
+- pyarrow (usado para exortar arquivos parquet).
+
+Para instalar as dependências necessárias, execute o comando:
+
+```bash
+pip install pandas openpyxl pyarrow
+
+```
+
 **4. Executar o programa**
-   
-No terminal, navegue até a pasta onde está o arquivo. Exemplo (se estiver em Downloads):
-```bash
-cd Downloads
-```
-E execute o programa passando o ano e o tipo de arquivo (Excel, CSV ou Parquet):
+
+Dentro da pasta do projeto, execute o programa passando o ano e o tipo de arquivo (Excel, CSV ou Parquet):
 ```bash
 python analise.py 2025 excel
 python analise.py 2018 csv
