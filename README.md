@@ -23,9 +23,9 @@ python analise.py 2025 excel
 ```
 
 ## 📌 Observações
-O peso argentino foi ignorado, pois a URL correspondente retornava dados incorretos, associando a moeda a outros códigos e não apresentando as colunas necessárias (Data de Câmbio, Taxa de Compra e Paridade de Compra). Além disso, havia mais de um código que supostamente correspondia à mesma moeda, o que tornava a utilização imprecisa.
+O peso argentino foi desconsiderado, pois a URL correspondente retornava dados incorretos, associando a moeda a outros códigos e não apresentando as colunas necessárias (Data de Câmbio, Taxa de Compra e Paridade de Compra). Além disso, havia mais de um código que supostamente correspondia à mesma moeda, o que tornava a utilização imprecisa.
 
-A intenção principal era iniciar o teste o mais rápido possível, por isso o desenvolvimento foi feito no Google Colab em vez do VS Code, já que mesmo com pandas instalado surgiam erros relacionados ao kernel. 
+A intenção principal era iniciar o teste o mais rápido possível. Por isso, o desenvolvimento foi feito no Google Colab em vez do VS Code, já que, mesmo com pandas instalado, surgiam erros relacionados ao kernel.
 
 Como resultado, os commits não foram feitos durante o desenvolvimento, apenas ao final, quando tudo estava pronto. Foram criados para demonstrar conhecimento em versionamento, embora não tenham acompanhado a evolução real do projeto.
 
@@ -55,15 +55,15 @@ Caso não tenha, você pode baixar em: [python.org](https://www.python.org/downl
 
 **2. Baixar o programa**
 
-- Clone o repositório;
+- Clone este repositório;
 
-- Salve em uma pasta de fácil acesso (ex.: Downloads).
+- Salve em um local de fácil acesso (ex.: Downloads).
 
 **3. Usando um ambiente virtual Python**
 
 Para garantir a compatibilidade do programa em diferentes ambientes (Mac OS / Windows / Linux), recomenda-se o uso de um ambiente virtual exclusivo para este projeto. Caso já possua o ambiente Python adequado, não é necessário a criação deste ambiente.
 
-Acesse a pasta do projeto (ex.: Downloads) e execute os seguintes comandos:
+Acesse a pasta do projeto e execute os seguintes comandos:
 
 ```bash
 python -m venv venv
