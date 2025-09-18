@@ -55,7 +55,7 @@ Caso não tenha, você pode baixar em: [python.org](https://www.python.org/downl
 
 **2. Baixar o programa**
 
-- Baixe o arquivo analise.py do repositório;
+- Clone o repositório;
 
 - Salve em uma pasta de fácil acesso (ex.: Downloads).
 
